@@ -1,0 +1,61 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.description {
+	/* height: 250px; */
+	resize: none;
+}
+
+.glyphicon {
+	top: 6px;
+}
+
+.thumbnail img{
+	width: 100%;
+}
+
+hr {
+	margin-bottom: 0;
+}
+
+.thumbnail {
+	padding: 0;
+}
+
+.thumbnail .caption-full {
+	padding: 9px;
+}
+
+.delete-form {
+	display: inline;
+}
+
+footer {
+	text-align: center;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* Flexbox grid fix */
+.flex-wrap {
+  display:flex;
+  flex-wrap: wrap;
+}
