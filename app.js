@@ -12,6 +12,9 @@ const express    			= require ('express'),
 	  Comment    			= require('./models/comment'),
 	  seedDB        		= require('./seeds');
 
+// configure dotenv
+require('dotenv').config();
+
 // REQURING ROUTES
 
 const campgroundRoutes = require('./routes/campgrounds'),
@@ -64,6 +67,6 @@ app.get('*', function(req,res){
 	res.redirect('/');
 });
 
-app.listen(3000, process.env.IP, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
 	console.log('server has started');
 });
